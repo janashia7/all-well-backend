@@ -30,7 +30,7 @@ const resetPasswordRequest = async (req, res) => {
       from: process.env.EMAIL_USER,
       to: email,
       subject: 'Password Reset Request',
-      html: `<p>Please click <a href="http://localhost:3000/reset-password/${token}">here</a> to reset your password.</p>`,
+      html: `<p>Please click <a href="https://all-well-frontend-8axa.vercel.app/reset-password/${token}">here</a> to reset your password.</p>`,
     };
 
     await transporter.sendMail(mailOptions);
